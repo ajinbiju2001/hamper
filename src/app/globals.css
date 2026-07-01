@@ -1,0 +1,98 @@
+:root {
+  --primary-pink: #FF5E99;
+  --soft-pink: #FFC4D6;
+  --blush-pink: #FFE6EE;
+  --rose-gold: #D89CA6;
+  --white: #FFFFFF;
+  --light-cream: #FFF8F9;
+  --very-light-pink: #FFF6F8;
+
+  --accent-rose-gold: #D89CA6;
+  --accent-soft-peach: #FFDAB9;
+  --accent-very-light-purple: #E6E6FA;
+  --accent-very-soft-gold: #F3E5AB;
+
+  --text-dark: #333333;
+  --text-muted: #777777;
+
+  --bg-color: var(--white);
+  --bg-soft: var(--very-light-pink);
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  --shadow-soft: 0 10px 40px -10px rgba(255, 94, 153, 0.15);
+  --shadow-hover: 0 20px 50px -15px rgba(255, 94, 153, 0.25);
+  --shadow-glass: 0 8px 32px 0 rgba(255, 196, 214, 0.2);
+
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.3);
+
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: all 0.2s ease-out;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  font-family: var(--font-inter), sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair), serif;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: var(--font-manrope), sans-serif;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Utilities */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-glass);
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
